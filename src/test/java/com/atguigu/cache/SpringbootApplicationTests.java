@@ -45,8 +45,8 @@ class SpringbootApplicationTests {
 
     @Test
     public  void  test04(){
-        Employee emp = employeeMapper.getEmployee(1);
-        myRedisTemplate.opsForValue().set("emp-02",emp);
+        Employee emp = employeeMapper.getEmployee(2);
+        System.out.println(emp);
     }
     @Test
     void contextLoads() {
